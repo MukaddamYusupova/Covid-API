@@ -1,0 +1,76 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    color: #000;
+}
+
+.container{
+    width: 50%;
+    margin: 10% auto 0;
+    box-shadow: 20px 20px 10px 5px blueviolet;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 50px;
+    border-radius: 20px;
+    visibility: hidden;
+}
+
+.foo{
+    animation: appear 2s;
+}
+
+@keyframes appear {
+    0% { opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #3498db;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+th{
+    float: left;
+    padding: 5px;
+}
+td{
+    float: right;
+    width: 100px;
+}
+
+h1, h3, h4{
+    text-align: center;
+}
+
+h1{
+    border-bottom: 2px solid blue;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+table{
+    width: 50%;
+    margin: 0 auto;
+}
